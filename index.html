@@ -104,7 +104,7 @@
         </div>
       </banner>
     </header>
-    <main>
+    <main class="w-11/12 mx-auto">
       <!-- adoption tittle section -->
       <section>
         <div class="adoption-tittle text-center mt-5">
@@ -131,6 +131,32 @@
         id="btn-categories"
         class="flex justify-center gap-10 my-10"
       ></section>
+      <!-- best-deal and sort-part buttons -->
+      <section class="my-10">
+        <div class="flex justify-between items-center">
+          <button
+            class="px-8 py-5 text-center border border-[#0E7A811A] rounded-md"
+          >
+            Best Deal For You
+          </button>
+          <button
+            class="px-8 py-5 text-center border border-[#0E7A811A] rounded-md"
+          >
+            Sort By Price
+          </button>
+        </div>
+      </section>
+      <!-- all pets card will be shown -->
+      <section id="" class="my-5 flex gap-5">
+        <div
+          id="pets-card"
+          class="w-3/4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 rounded-md border border-gray-200"
+        ></div>
+        <div
+          id="pet-img"
+          class="w-1/5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 rounded-md border border-gray-200"
+        ></div>
+      </section>
     </main>
 
     <script src="./scripts/script.js"></script>
