@@ -94,7 +94,7 @@
             an animal a home, it’s about giving your heart ❤️ a place to love.
           </p>
           <button class="px-6 py-4 bg-[#0E7A81] rounded mt-5">
-            <a href="#card-section" class="font-bold text-[#FFFFFF] text-sm"
+            <a href="#all-card" class="font-bold text-[#FFFFFF] text-sm"
               >View More</a
             >
           </button>
@@ -129,17 +129,18 @@
       <!-- different types of pets button-part -->
       <section
         id="btn-categories"
-        class="flex justify-center gap-10 my-10"
+        class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 items-center my-10"
       ></section>
       <!-- best-deal and sort-part buttons -->
       <section class="my-10">
-        <div class="flex justify-between items-center">
+        <div class="flex justify-between gap-5 items-center">
           <button
             class="px-8 py-5 text-center border border-[#0E7A811A] rounded-md"
           >
             Best Deal For You
           </button>
           <button
+            id="sort-button"
             class="px-8 py-5 text-center border border-[#0E7A811A] rounded-md"
           >
             Sort By Price
@@ -147,17 +148,52 @@
         </div>
       </section>
       <!-- all pets card will be shown -->
-      <section id="" class="my-5 flex gap-5">
+      <section id="all-card" class="my-5 grid grid-cols-3 gap-2">
         <div
           id="pets-card"
-          class="w-3/4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 rounded-md border border-gray-200"
+          class="grid col-span-3 md:col-span-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 rounded-md"
         ></div>
         <div
           id="pet-img"
-          class="w-1/5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 rounded-md border border-gray-200"
+          class="grid col-span-1 md:grid-cols-2 m-h-48 lg:grid-cols-2 gap-2 rounded-md border border-gray-100"
         ></div>
       </section>
+
+      <!-- countDown card -->
+      <section class="countdown-card">
+        <div
+          id="countdown-card"
+          class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+        >
+          <div class="bg-white rounded-lg p-8 shadow-lg text-center font-bold">
+            <h2 class="text-3xl mb-5">Congratulation</h2>
+            <p class="text-xl text-[#4cecf8]">
+              Your Adoption Will Completed ❤️ ....
+            </p>
+            <h3 id="countDown-timer" class="text-8xl text-red-500 my-5">3</h3>
+          </div>
+        </div>
+      </section>
+      <!-- modal-content-part -->
+      <section class="modal-part">
+        <!-- Open the modal using ID.showModal() method -->
+        <button class="btn hidden" onclick="myModal.showModal()">
+          open modal
+        </button>
+        <dialog id="myModal" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box">
+            <div id="modal-content"></div>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+      </section>
     </main>
+    <footer></footer>
 
     <script src="./scripts/script.js"></script>
   </body>

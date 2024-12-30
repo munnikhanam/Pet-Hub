@@ -1,1 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.inactive {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+.active {
+  box-sizing: border-box;
+  border: 1.5px solid #0e7a81;
+  border-radius: 1.8rem 1.8rem !important;
+  background-color: #0e7a811a;
+}
