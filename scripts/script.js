@@ -247,8 +247,11 @@ const displayAllPets = (pets) => {
     pets.sort((a, b) => b.price - a.price);
     displayAllPets(pets);
   };
-  document.getElementById("sort-button").addEventListener("click", () => {
+  const sortButton = document.getElementById("sort-button");
+  sortButton.addEventListener("click", () => {
     sortPetsByPrice();
+    sortButton.classList =
+      "bg-[#0E7A81] px-8 py-5 text-center text-white border border-[#0E7A811A] rounded-md";
   });
 };
 
